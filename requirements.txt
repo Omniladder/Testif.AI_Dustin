@@ -1,5 +1,6 @@
 fastapi[standard]
 langchain-community
+pytesseract
 pypdf2
 python-multipart
 rapidocr-onnxruntime
