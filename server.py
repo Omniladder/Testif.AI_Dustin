@@ -119,6 +119,7 @@ async def final(
     logger.info(f"Form data: {data}")
     try:
         test = await run(data)
+        print("Generated Test")
         logger.info("Test generated successfully")
     except Exception as e:
         logger.error(f"Error generating test: {e}")
