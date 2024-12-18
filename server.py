@@ -115,7 +115,6 @@ async def final(
         subject_material=subject_material
     )
 
-    print("Triigered")
     logger.info("POST request received for /generate")
     logger.info(f"Form data: {data}")
     try:

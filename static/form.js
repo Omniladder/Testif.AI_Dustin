@@ -13,6 +13,6 @@ form.addEventListener('submit', function(event){
     // Optionally, you can submit the form here after a short delay
      setTimeout(() => {
          form.submit(); // Submit the form after displaying loading
-     }, 10000); // Adjust the timeout as necessary
+     }, 10); // Adjust the timeout as necessary
 })
 })
