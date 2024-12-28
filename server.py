@@ -47,7 +47,7 @@ class GeneratedTest(BaseModel):
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/TestifAi/static", StaticFiles(directory="static"), name="static")
 #app.mount("/static/images", StaticFiles(directory="static/images"), name="images")
 logger.info("Static files mounted")
 
