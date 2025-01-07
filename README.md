@@ -4,6 +4,8 @@
 
 > [!IMPORTANT]
 > We're pleased to announce that Testif.AI won best Educational and 2nd best Overall Hack at [HackUMBC](https://www.hackumbc.tech) 2024!
+>
+> If you find this project useful, please consider giving us a star!
 
 ## About the Project
 
@@ -23,7 +25,14 @@ Testif.AI has a frontend built with HTML, CSS and Javascript. When the user fill
 
 ## About the Team
 
-Our team consists of Spencer Presley, Dustin O'Brien, Isaac Dugan, and JJ McCauley. We are all students from Salisbury University. Go Gulls!
+Our team consists of:
+
+- [Spencer Presley](https://github.com/spencerpresley)
+- [Dustin O'Brien](https://github.com/Omniladder)
+- [Isaac Dugan](https://github.com/idugan100)
+- [JJ McCauley](https://github.com/Jairik)
+
+We are all students from Salisbury University. Go Gulls!
 
 ## How to run
 
