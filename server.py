@@ -47,7 +47,7 @@ class GeneratedTest(BaseModel):
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/TestifAi/static", StaticFiles(directory="static"), name="static")
 #app.mount("/static/images", StaticFiles(directory="static/images"), name="images")
 logger.info("Static files mounted")
 
@@ -119,6 +119,7 @@ async def final(
     logger.info(f"Form data: {data}")
     try:
         test = await run(data)
+        print("Generated Test")
         logger.info("Test generated successfully")
     except Exception as e:
         logger.error(f"Error generating test: {e}")

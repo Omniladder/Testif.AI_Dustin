@@ -1,3 +1,4 @@
 venv/
+chains.log
 __pycache__/
 .env
