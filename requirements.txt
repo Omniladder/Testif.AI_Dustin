@@ -13,3 +13,5 @@ python-pptx
 docx2txt
 aiofiles
 PyMuPDF
+pytesseract
+aiofiles

@@ -1,6 +1,13 @@
+# Testif.AI
+
 ![Testif.AI](./static/logo.png)
 
-<h2><strong>We're pleased to announce that Testif.AI won best Educational and 2nd best Overall Hack at <a href="https://www.hackumbc.tech">HackUMBC</a> 2024!</strong></h2>
+> [!IMPORTANT]
+> We're pleased to announce that Testif.AI won best Educational and 2nd best Overall Hack at [HackUMBC](https://www.hackumbc.tech) 2024!
+
+## About the Project
+
+Making a test can take a long time. You have to review the material you want to test, select the most important topics, write out questions and create an answer key. This can take hours especially for complex subjects.
 
 Making a test can take a long time. You have to review the material you want to test, select the most important topics, write out questions and create an answer key. This can take hours especially for complex subjects.
 
@@ -11,7 +18,39 @@ Though this solution is primarily for teachers, it is also a great tool for stud
 Learning is important to our team and to the world. We've made a meaningful contribution to the world of education by simplifying the process of test creation for teachers and students alike.
 
 ## Technical Details
+
 Testif.AI has a frontend built with HTML, CSS and Javascript. When the user fills out the test generation form a request is sent to our FastAPI backend which calls Langchain (a generative AI framework) and uses a variety of techniques including mixture of experts, retrieval augmented generation, and prompt chaining to generate a great test that meets the users specifications
 
 ## About the Team
+
 Our team consists of Spencer Presley, Dustin O'Brien, Isaac Dugan, and JJ McCauley. We are all students from Salisbury University. Go Gulls!
+
+## How to run
+
+1. Clone the repository
+
+    ```bash
+    git clone https://github.com/spencerpresley/TestifAI.git && cd TestifAI
+    ```
+
+2. Install the dependencies
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Run the server
+
+    ```bash
+    uvicorn server:app
+    ```
+
+4. Open the frontend in your browser
+
+    ```bash
+    http://127.0.0.1:8000
+    ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

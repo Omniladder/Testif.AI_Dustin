@@ -1,19 +1,12 @@
-from typing import Annotated
 from typing import List
 import logging
-import sys
 from typing import List, Optional
-
-sys.path.append('.')
-# from .pythonBackend import run
-# for spencer
-from pythonBackend import run
-from starlette.responses import FileResponse
 from fastapi import FastAPI, UploadFile, Form, Request, File
-from pydantic import BaseModel, ValidationError
-from fastapi.responses import JSONResponse
+from pydantic import BaseModel
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+
+from src.TestifAI import run
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)

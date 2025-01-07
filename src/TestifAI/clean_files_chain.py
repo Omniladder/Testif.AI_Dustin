@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 import logging
 import tempfile
 import sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from PIL import Image
 import pytesseract
 import asyncio
