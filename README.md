@@ -60,6 +60,54 @@ We are all students from Salisbury University. Go Gulls!
     http://127.0.0.1:8000
     ```
 
+## How to run using uv
+
+[uv](https://github.com/astral-sh/uv) is a python package manager written in rust, and is much faster than using something like pip.
+
+1. Install uv:
+
+    ```bash
+    # On macOS
+    brew install uv
+
+    # On Unix/Linux/macOS (alternative method)
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+
+    # On Windows
+    powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+    ```
+
+2. Create and activate a new virtual environment:
+
+    ```bash
+    uv venv
+    source .venv/bin/activate  # On Unix/macOS
+    # or
+    .venv\Scripts\activate  # On Windows
+    ```
+
+3. Install dependencies using uv:
+
+    ```bash
+    uv pip install -r requirements.txt
+    ```
+
+4. Run the server:
+
+    ```bash
+    uvicorn server:app
+    ```
+
+5. Open the frontend in your browser:
+
+    ```bash
+    http://127.0.0.1:8000
+    ```
+
+> [!NOTE]
+> Using uv can significantly speed up dependency installation,
+> especially in projects with many requirements.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
